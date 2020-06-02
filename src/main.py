@@ -2,7 +2,6 @@ import ctypes
 import sys
 
 import PySimpleGUI as sg
-
 import comparison_utils
 
 # Needed if using tkinter on win10 HiDPI screen because of font blurring
@@ -29,26 +28,25 @@ col_B = [[sg.Text("New Search File (B):")],
           sg.FileBrowse(file_types=([("csv or xml File", "*.csv;*.xml")]))],
          [sg.Frame("Summary:", [[sg.Text(key="-SUMMARY-", size=(30, 7))]])]
          ]
-
+comparison_table = sg.Table(
+    values=[[" " * 84]],
+    headings=["Title"],
+    background_color="lightyellow",
+    display_row_numbers=True,
+    max_col_width=20000,
+    justification="left",
+    num_rows=10,
+    alternating_row_color="lightblue",
+    key="-TABLE-",
+    tooltip="Resulting Titles Determined by Selected Set Operation",
+)
+comparison_table.StartingRowNumber = 1
 layout = [
     [sg.Text("Enter 2 files to compare", justification="center", font="Helvetica 15")],
     [sg.Column(col_A), sg.VerticalSeparator(), sg.Column(col_B)],
     [sg.Button("Compare", tooltip="Perform set operations to compare file A and file B")],
     [sg.Text("Results:")],
-    [
-        sg.Table(
-            values=[[" " * 84]],
-            headings=["Title"],
-            background_color="lightyellow",
-            display_row_numbers=True,
-            max_col_width=20000,
-            justification="left",
-            num_rows=10,
-            alternating_row_color="lightblue",
-            key="-TABLE-",
-            tooltip="Resulting Titles Determined by Selected Set Operation",
-        )
-    ],
+    [comparison_table],
     [sg.Text("Warnings:")],
     [sg.Output(key="-OUTPUT-", text_color="red", size=(106, 6))],
     [
