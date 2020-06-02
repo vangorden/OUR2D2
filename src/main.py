@@ -67,7 +67,7 @@ def get_radio_operation(values):
             return k
 
 
-window = sg.Window("Our2D2", layout, auto_size_buttons=True, auto_size_text=True, icon='../assets/icon.ico',
+window = sg.Window("OUR2D2", layout, auto_size_buttons=True, auto_size_text=True, icon='../assets/icon.ico',
                    location=(0, 0), resizable=True)
 title_lists = []
 results = set()
