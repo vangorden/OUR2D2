@@ -3,10 +3,13 @@ For comparing article titles from journal databases with set operations.
 ![Screenshot of user interface](assets/Screenshot.png)
 ---
 **Requirements:** Python 3.6 if building from source
+
 **Supported operating systems:** Windows
+
 **Supported journal databases and formats:** EndNote XML, Embase CSV, PubMed CSV, 
-  ProQuest CSV, Web of Science CSV, PsychInfo CSV, Lens CSV, Scopus CSV, and CINAHL CSV
+  ProQuest CSV, Web of Science CSV, PsychInfo CSV, Lens CSV, Scopus CSV, and CINAHL CSV 
 ---
+
 ## Installation
 A prebuilt executable is available on the Releases page which is compiled for use on Windows.
 Because this executable is unsigned, Windows will warn you against downloading and installing it.
