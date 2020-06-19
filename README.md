@@ -1,4 +1,4 @@
-# OUR2D2
+# Open Update Re-Run De-duplicate (OUR2D2)
 For comparing article titles from journal databases with set operations.
 ![Screenshot of user interface](assets/Screenshot.png)
 ---
@@ -11,7 +11,8 @@ For comparing article titles from journal databases with set operations.
 ---
 
 ## Installation
-A prebuilt executable is available on the Releases page which is compiled for use on Windows.
+A prebuilt executable is available [here](https://github.com/vangorden/OUR2D2/releases/download/v0.1-beta.2/OUR2D2.exe)
+and on the [Releases](https://github.com/vangorden/OUR2D2/releases) page which is compiled for use on Windows.
 Because this executable is unsigned, Windows will warn you against downloading and installing it.
 If you are concerned about the security implications of using it, then you can follow the directions
 below which will guide you through building it from source.
