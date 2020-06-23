@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3905250.svg)](https://doi.org/10.5281/zenodo.3905250)
+
 # Open Update Re-Run De-duplicate (OUR2D2)
 For comparing article titles from journal databases with set operations.
 ![Screenshot of user interface](assets/Screenshot.png)
